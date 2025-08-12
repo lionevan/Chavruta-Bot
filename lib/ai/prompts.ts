@@ -1,3 +1,5 @@
+// lib/ai/prompts.ts
+import { regularPrompt } from './regularPrompt';
 import type { ArtifactKind } from '@/components/artifact';
 import type { Geo } from '@vercel/functions';
 
@@ -32,8 +34,6 @@ This is a guide for using artifacts tools: \`createDocument\` and \`updateDocume
 Do not update document right after creating it. Wait for user feedback or request to update it.
 `;
 
-export const regularPrompt =
-  'You are a friendly assistant! Keep your responses concise and helpful.';
 
 export interface RequestHints {
   latitude: Geo['latitude'];
